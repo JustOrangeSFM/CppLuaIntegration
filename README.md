@@ -64,3 +64,6 @@ LuaHandler::Get().loadScriptFromMemory("script content");
 LuaHandler::Get().loadScriptFromMemory(R"(script content
     ... )");
 ```
+
+# Examples
+Example lua scripts you can see in folder "Scripts"
