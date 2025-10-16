@@ -66,4 +66,4 @@ LuaHandler::Get().loadScriptFromMemory(R"(script content
 ```
 
 # Examples
-Example lua scripts you can see in folder "Scripts" [a link](https://github.com/user/repo/blob/branch/other_file.md)
+Example lua scripts you can see in folder [Scripts]((https://github.com/JustOrangeSFM/CppLuaIntegration/tree/main/Scripts))
