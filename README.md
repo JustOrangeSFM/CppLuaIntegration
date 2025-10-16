@@ -3,8 +3,8 @@ Base project where you can use **c++ in lua!**
 
 # HOW TO USE:
 
-
-``` Register class in c++ for lua
+Register class in c++ for lua
+``` 
 void MyClass::StaticRegisterLua() {
     LuaHandler::Get().registerClass<MyClass>("MyClass", //class
         sol::constructors<sol::types<int>>(), //constucror
@@ -16,8 +16,8 @@ void MyClass::StaticRegisterLua() {
     );
 }
 ```
-
-``` example main.cpp
+example main.cpp
+``` 
 #include "lua_include.h"
 #include <cstdlib>
 #include <iostream>
@@ -47,18 +47,18 @@ int main() {
 ```
 
 # Loading lua script:
-
-``` from file
+from file
+``` 
 LuaHandler::Get().loadScriptFromFile("path to script");
 ```
 
-
-``` from file save
+from file save
+``` 
 sol::protected_function_result result = LuaHandler::Get().lua().safe_script_file("path to script");
 ```
 
-
-``` from memory
+from memory
+``` 
 LuaHandler::Get().loadScriptFromMemory("script content"); 
 //or 
 LuaHandler::Get().loadScriptFromMemory(R"(script content
